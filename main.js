@@ -62,10 +62,8 @@ button.addEventListener("click", function () {
       }
     })
     .catch((err) => {
-      theStatus = false;
-      if(theStatus === false){
-        document.querySelector("span").textContent = "Countery Not Found";
-      }
+        document.querySelector("#span").textContent = "Countery Not Found";
+        document.querySelector("#span").style.display = "Block";
     });
 });
 function typeWriter(text, elementId, speed = 100) {
