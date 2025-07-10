@@ -9,6 +9,9 @@ button.addEventListener("click", function () {
   )
     .then((res) => res.json())
     .then((data) => {
+          if (data.cod !== 200) {
+      throw new Error("City not found");
+    }
       theStatus = true
       let iconCode = data.weather[0].icon;
       const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
