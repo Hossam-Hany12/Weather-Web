@@ -64,13 +64,12 @@ button.addEventListener("click", function () {
         document.body.style.cursor = "default";
       }
     })
-    .catch((err) => {
-        window.onload = function() {
-        document.querySelector("#span").innerHTML = "Country Not Found";
-        document.querySelector("#span").innerHTML = "Countery Not Found";
-        document.querySelector("#span").style.display = "Block";
-};
-    });
+.catch((err) => {
+  console.error("Error:", err.message);
+  const errorSpan = document.querySelector("#span");
+  errorSpan.innerHTML = "Country Not Found";
+  errorSpan.style.display = "block";
+});
 });
 function typeWriter(text, elementId, speed = 100) {
   let i = 0;
