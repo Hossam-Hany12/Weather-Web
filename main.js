@@ -62,7 +62,7 @@ button.addEventListener("click", function () {
       }
     })
     .catch((err) => {
-        document.querySelector("#span").textContent = "Countery Not Found";
+        document.querySelector("#span").innerHTML = "Countery Not Found";
         document.querySelector("#span").style.display = "Block";
     });
 });
