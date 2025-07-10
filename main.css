@@ -54,13 +54,12 @@ h2 {
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.6s ease-in-out;
-height: 5px;
+  height: 5px;
 }
 .weather-box.active {
   opacity: 1;
   transform: translateY(0);
 height: auto;
-
 }
 input {
   width: 70%;
@@ -70,8 +69,8 @@ input {
   padding-left: 20px;
   padding-right: 20px;
   margin-right: 10px;
-  font-size:20px;
-  font-weight:500;
+  font-size: 20px;
+  font-weight: 500;
 }
 input:focus {
   outline: none;
