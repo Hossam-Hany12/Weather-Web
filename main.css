@@ -129,3 +129,18 @@ span {
     opacity: 0;
   }
 }
+@media(max-width:768px){
+  h1{
+    font-size: 20px;
+  }
+  #weather{
+    width: 60%;
+    height: fit-content;
+    padding: 10px;
+    padding-top: 20px;
+  }
+  input{
+    width: 60%;
+    font-size: 18px;
+  }
+}
