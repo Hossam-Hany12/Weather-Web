@@ -62,8 +62,11 @@ button.addEventListener("click", function () {
       }
     })
     .catch((err) => {
+        window.onload = function() {
+        document.querySelector("#span").innerHTML = "Country Not Found";
         document.querySelector("#span").innerHTML = "Countery Not Found";
         document.querySelector("#span").style.display = "Block";
+};
     });
 });
 function typeWriter(text, elementId, speed = 100) {
